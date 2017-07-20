@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack Sones Tattoo</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/page.css">
+  </head>
+    <body>
+      <div class="header">
+        <h1><a href="index.html">Jack Sones Tattoo</a></h1>
+      </div>
+      <div class="navigation">
+        <ol>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html#portfolio">Portfolio</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+        </ol>
+      </div>
+      <div class="container2">
+        <section>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var cookies = {lat: 52.187583, lng: -2.217462};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: cookies
+              });
+              var marker = new google.maps.Marker({
+                position: cookies,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf7l8mAATZpQFdqaOpiicvsM7bUYT96VA&callback=initMap">
+          </script>
+          <p class="findme">You can find me at Cookies Custom Tattooing Studio, 
+    71-75 Sidbury, Worcester, WR1 2HU</p>
+        </section>
+        <section class="contact">
+          <h3>Contact Details</h3>
+          <ul class="contactdetails">
+            <li class="email"><a href="mailto:jacksonestattoo@gmail.com">jacksonestattoo@gmail.com</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/Jacksonestattoo/">jacksonestattoo</a></li>
+            <li class="instagram"><a href="https://www.instagram.com/jacksonestattoo/?hl=en">@jacksonestattoo</a></li>
+          </ul>
+        </section>
+      </div>
+      <footer>
+        <div class="footer">
+          <p>&copy; Copyright Jack Sones 2017</p>
+          <p>Website built by Barbs Web Design</p>
+        </div>
+      </footer>
+    </body>
+</html>
